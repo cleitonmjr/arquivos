@@ -1,0 +1,197 @@
+@charset "UTF-8"; 
+
+@font-face {
+    font-family: 'Rez';
+    src: url(../fonts/rez.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family= Montserrat :wght@500 & display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
+
+:root {
+    --cor1: #d1f8ff;
+    --cor2: #06e2f1;
+    --cor3: #005679;
+    --cor4: #fd0855;
+    --cor5: #020126;
+
+    --font-logo: 'Rez', sans-serif;
+    --font-titulo: 'Orbitron', sans-serif;
+    --font-conteudo: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor5);
+
+    font-family: var(--font-conteudo);
+}
+
+header {
+    background-color: var(--cor5);
+
+    min-height: 150px;
+
+    text-align: center;
+
+    padding-top: 40px;
+}
+
+header > hr {
+    background-color: var(--cor1);
+
+    border: none;
+
+    height: 4px;
+}
+
+header > h1 {
+    color: var(--cor2);
+
+    font-family: var(--font-logo);
+    font-size: 8.5em;
+    font-weight: normal;
+
+    margin-bottom: -25px;
+
+    text-align: center;
+}
+
+header > p {
+    color: var(--cor4);
+
+    font-family: var(--font-logo);
+    font-size: 3em;
+    font-weight: normal;
+
+    max-width: 500px;
+
+    margin: auto;
+    margin-bottom: 35px;
+
+    text-align: center;
+
+}
+
+h1 {
+    color: #06e2f1;
+
+    font-family: var(--font-logo);
+}
+
+nav {
+    background-color: var(--cor4);
+
+    padding: 7px;
+
+    text-align: center;
+
+    font-size: var(--font-conteudo);
+    
+    margin: auto;
+
+    height: 22px;
+
+    box-shadow: 3px 8px 7px rgba(0, 0, 0, 0.171);
+}
+
+nav > a {
+    color: var(--cor5);
+
+    padding: 10px;
+
+    margin: -2px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+    font-size: 1.1em;
+
+    border-radius: 5px;
+
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor1);
+
+    margin: 5px;
+
+    padding: 8px;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 25px;
+
+    background-color: var(--cor5);
+
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.39);
+}
+
+main h1 {
+    color: var(--cor2);
+
+    font-family: var(--font-titulo);
+    
+    font-size: 1.8em;
+}
+
+main p {
+    color: white;
+
+    font-family: var(--font-conteudo);
+    font-size: 1.08em;
+
+    margin: 17px 0px;
+
+    text-align: justify;
+    text-indent: 40px;
+
+    line-height: 1.5em;
+}
+
+main p#urlportfolio {
+    text-align: center;
+}
+
+main a {
+    text-decoration: none;
+
+    color: white;
+
+    padding: 4px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+
+    color: var(--cor4);
+}
+
+footer {
+    background-color: var(--cor4);
+    
+    color: white;
+    
+    text-align: center;
+
+    font-size: 1em;
+
+    padding: 6px;
+
+    margin: auto;
+
+    line-height: 1.5em;
+}
